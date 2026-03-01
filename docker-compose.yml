@@ -1,0 +1,33 @@
+services:
+  # Прокси 1 (порт 8081)
+  mtproxy:
+    image: nineseconds/mtg:2
+    container_name: mtproxy
+    restart: always
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./config.toml:/config.toml
+    command: run /config.toml
+
+  # Прокси 2 (порт 8082)
+  mtproxy2:
+    image: nineseconds/mtg:2
+    container_name: mtproxy2
+    restart: always
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./config2.toml:/config.toml
+    command: run /config.toml
+
+  # Прокси 3 (порт 8083)
+  mtproxy3:
+    image: nineseconds/mtg:2
+    container_name: mtproxy3
+    restart: always
+    ports:
+      - "8083:8080"
+    volumes:
+      - ./config3.toml:/config.toml
+    command: run /config.toml

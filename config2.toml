@@ -1,0 +1,11 @@
+# Конфигурация mtg v2 (nineseconds/mtg:2) - Экземпляр 2
+
+# Секретный ключ (Fake-TLS)
+secret = "eeac6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d676f6f676c652e636f6d"
+
+# Шаблоны ссылок:
+# tg://proxy?server=<IP>&port=8082&secret=eeac6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d676f6f676c652e636f6d
+# https://t.me/proxy?server=<IP>&port=8082&secret=eeac6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d676f6f676c652e636f6d
+
+# Локальный адрес и порт прослушивания
+bind-to = "0.0.0.0:8080"
