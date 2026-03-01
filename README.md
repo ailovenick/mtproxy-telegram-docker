@@ -1,6 +1,6 @@
 # MTProxy (mtg v2) с Fake-TLS
 
-MTProto прокси на языке Go с маскировкой трафика под HTTPS.
+MTProto прокси на языке Go с маскировкой трафика под HTTPS.  
 Официальный репозиторий: https://github.com/9seconds/mtg
 
 ## Конфигурация и масштабирование
